@@ -32,6 +32,12 @@
             height: auto;
             border-radius: 14px;
         }
+        .art-title {
+            margin: 8px 0 6px;
+            font-weight: 800;
+            color: #681414;
+            font-size: 0.98rem;
+        }
         .back-btn {
             display: block;
             margin-top: 20px;
@@ -62,7 +68,13 @@
                 <a class="card-link" href="achievements.html">Achievements</a>
                 <a class="card-link" href="volunteering.html">Volunteering</a>
                 <a class="card-link" href="projects.html">Projects</a>
-                <a class="card-link" href="extracurriculars.html">Extracurriculars</a>
+                <div class="dropdown">
+                    <button class="card-link dropdown-toggle" type="button">Extracurriculars ▾</button>
+                    <div class="dropdown-content">
+                        <a href="extracurriculars.html">Karate</a>
+                        <a href="orchestra.html">Orchestra</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -74,19 +86,48 @@
         <h2>Art</h2>
         <p>This is the Art page.</p>
         <div class="art-frame">
-            <img src="assets/quisshyfa.png" alt="Quisshyfa art example">
+            <div class="art-title">Old Character Concept Art - 8/21/2023</div>
+            <img src="assets/2023sandy.png" alt="Old Character Concept Art">
         </div>
         <div class="art-frame">
-            <img src="assets/sandyyy.png" alt="Sandyyy art example">
+            <div class="art-title">Shadow Cloak - 1/1/2026</div>
+            <img src="assets/quisshyfa.png" alt="Shadow Cloak">
         </div>
         <div class="art-frame">
-            <img src="assets/mainCat.png" alt="mainCat art example">
+            <div class="art-title">Lavender Lighting - 2/15/2025</div>
+            <img src="assets/sandy2025.jpeg" alt="Lavender Lighting">
         </div>
         <div class="art-frame">
-            <img src="assets/kestralTitleScreen.png" alt="Kestral title screen example">
+            <div class="art-title">Flares - 7/30/2024</div>
+            <img src="assets/mavenfa.png" alt="Flares">
         </div>
         <div class="art-frame">
-            <img src="assets/tylerfa1.png" alt="Tylerfa1 art example">
+            <div class="art-title">Character Concept Art - 6/9/2026</div>
+            <img src="assets/sandyyy.png" alt="Character Concept Art">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Rose in Hand Portrait - 2/20/2025</div>
+            <img src="assets/methaifa.jpeg" alt="Rose in Hand Portrait">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Astronaut Portrait - 9/6/2025</div>
+            <img src="assets/mindofneofa.jpeg" alt="Astronaut Portrait">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Rose Garden - 11/29/2025</div>
+            <img src="assets/roses.jpeg" alt="Rose Garden">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Makeup API Kitty - 6/12/2026</div>
+            <img src="assets/mainCat.png" alt="Makeup API Kitty">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Title Screen Cat - 7/10/2026</div>
+            <img src="assets/kestralTitleScreen.png" alt="Title Screen Cat">
+        </div>
+        <div class="art-frame">
+            <div class="art-title">Glam Lighting - 7/18/2026</div>
+            <img src="assets/tylerfa1.png" alt="Glam Lighting">
         </div>
         <hr>
         <h3>3D Art</h3>
@@ -117,4 +158,5 @@
         <p>&copy; 2026 My Website</p>
     </footer>
 </body>
+<script src="nav-fix.js"></script>
 </html>

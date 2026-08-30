@@ -54,6 +54,30 @@
             line-height: 1.6;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .project-images {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-image {
+            width: calc(50% - 12px);
+            max-width: 360px;
+            border-radius: 12px;
+            border: 1px solid #f0c6d8;
+            box-shadow: 0 8px 16px rgba(104,20,20,0.06);
+            display: block;
+        }
+        .proj-desc {
+            background: #fff1f6;
+            border: 1px solid #f0c6d8;
+            border-radius: 12px;
+            padding: 12px;
+            margin-top: 12px;
+            color: #681414;
+            max-width: 760px;
+        }
         .back-btn {
             display: inline-block;
             margin-top: 20px;
@@ -84,7 +108,13 @@
                 <a class="card-link" href="achievements.html">Achievements</a>
                 <a class="card-link" href="volunteering.html">Volunteering</a>
                 <a class="card-link" href="projects.html">Projects</a>
-                <a class="card-link" href="extracurriculars.html">Extracurriculars</a>
+                <div class="dropdown">
+                    <button class="card-link dropdown-toggle" type="button">Extracurriculars ▾</button>
+                    <div class="dropdown-content">
+                        <a href="extracurriculars.html">Karate</a>
+                        <a href="orchestra.html">Orchestra</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -96,7 +126,7 @@
         <h2>Projects</h2>
         <p>This is the Projects page.</p>
         <div class="art-frame">
-            <div class="project-title"><strong>Love at First Shade - Makeup API Project</strong></div>
+            <div class="project-title"><strong>Love at First Shade: Makeup API Project - June, 2026</strong></div>
             <video controls>
                 <source src="assets/finalvideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -116,6 +146,17 @@
                 cards, images, pagination, and even a shopping cart.
             </div>
         </div>
+        <div class="art-frame">
+            <div class="project-title"><strong>AI Pneumonia Detection Model - August, 2024</strong></div>
+            <div class="project-images">
+                <img src="assets/AIModel1.png" alt="AI Model 1" class="project-image">
+                <img src="assets/AIModel2.png" alt="AI Model 2" class="project-image">
+            </div>
+            <div class="proj-desc">I helped develop an AI model that provided patients with a quicker diagnosis of Pneumonia,
+Implementing different modules such as Input, Processing, Training, and Output. Additonally I also trained our model using data from a public dataset available on Kaggle,
+using Python for code and TensorFlow to train the AI model. 
+</div>
+        </div>
         <a href="index.html" class="back-btn">← Back to Home</a>
     </div>
 
@@ -126,4 +167,5 @@
         <p>&copy; 2026 My Website</p>
     </footer>
 </body>
+<script src="nav-fix.js"></script>
 </html>

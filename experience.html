@@ -17,6 +17,41 @@
             color: #681414;
             margin-top: 0;
         }
+        .experience-card {
+            background: #ffe6f0;
+            padding: 16px;
+            border: 2px solid #f0c6d8;
+            border-radius: 18px;
+            box-shadow: 0 12px 24px rgba(104,20,20,0.08);
+            margin-top: 20px;
+        }
+        .experience-card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #681414;
+        }
+        .experience-card ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+        .experience-card li {
+            margin-bottom: 8px;
+        }
+        .photo-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        .photo-row img {
+            width: calc(40% - 6px);
+            min-width: 180px;
+            max-width: 240px;
+            flex: 1 1 180px;
+            height: auto;
+            border-radius: 14px;
+            border: 1px solid #f0c6d8;
+        }
         .back-btn {
             display: inline-block;
             margin-top: 20px;
@@ -47,7 +82,13 @@
                 <a class="card-link" href="achievements.html">Achievements</a>
                 <a class="card-link" href="volunteering.html">Volunteering</a>
                 <a class="card-link" href="projects.html">Projects</a>
-                <a class="card-link" href="extracurriculars.html">Extracurriculars</a>
+                <div class="dropdown">
+                    <button class="card-link dropdown-toggle" type="button">Extracurriculars ▾</button>
+                    <div class="dropdown-content">
+                        <a href="extracurriculars.html">Karate</a>
+                        <a href="orchestra.html">Orchestra</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -57,8 +98,31 @@
     <!-- Page Content -->
     <div class="page-content">
         <h2>Experience</h2>
-        <p>This page highlights my experience in academic projects, volunteer work, and creative pursuits.
-        </p>
+        <p>This page highlights my experience in academic projects, volunteer work, and creative pursuits.</p>
+
+        <div class="experience-card">
+            <h3>Tufts Mini-Med School Summer Program — (June, 2026)</h3>
+            <ul>
+                <li>Participated in a summer medical program focused on medicine, healthcare, and biomedical science.</li>
+                <li>Engaged in activities such as suturing, IV insertion, CPR, growing bacteria to observe effectiveness of antibodies, dissections, and realistic emergency simulations.</li>
+                <li>Strengthened interest in interdisciplinary STEM fields, including biology, medicine, and biotech.</li>
+            </ul>
+            <div class="photo-row">
+                <img src="assets/simRoom.jpg" alt="Simulation room activity">
+                <img src="assets/cpr.jpg" alt="CPR activity">
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <h3>AI Pneumonia Detection Model — (August, 2024)</h3>
+            <ul>
+                <li>Helped develop an AI model that provided patients with a quicker diagnosis of Pneumonia.</li>
+                <li>Implemented different modules: Input, Processing, Training, and Output.</li>
+                <li>Trained our model using data from a public dataset available on Kaggle.</li>
+                <li>Used Python for code and TensorFlow to train the AI model.</li>
+            </ul>
+        </div>
+
         <a href="index.html" class="back-btn">← Back to Home</a>
     </div>
 
@@ -69,4 +133,5 @@
         <p>&copy; 2026 My Website</p>
     </footer>
 </body>
+<script src="nav-fix.js"></script>
 </html>

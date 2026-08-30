@@ -34,6 +34,38 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 20px rgba(104,20,20,0.12);
         }
+        .vol-box {
+            background: #ffe6f0;
+            border: 1px solid #f0c6d8;
+            border-radius: 16px;
+            padding: 18px;
+            margin-top: 18px;
+            box-shadow: 0 10px 20px rgba(104,20,20,0.06);
+        }
+        .vol-title {
+            font-weight: 800;
+            color: #681414;
+            background: #f8d7e0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .vol-desc {
+            background: #fff1f6;
+            border: 1px solid #f0c6d8;
+            border-radius: 12px;
+            padding: 12px;
+            color: #681414;
+            margin-top: 8px;
+        }
+        .vol-image {
+            display: block;
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #f0c6d8;
+            margin: 12px 0;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +79,13 @@
                 <a class="card-link" href="achievements.html">Achievements</a>
                 <a class="card-link" href="volunteering.html">Volunteering</a>
                 <a class="card-link" href="projects.html">Projects</a>
-                <a class="card-link" href="extracurriculars.html">Extracurriculars</a>
+                <div class="dropdown">
+                    <button class="card-link dropdown-toggle" type="button">Extracurriculars ▾</button>
+                    <div class="dropdown-content">
+                        <a href="extracurriculars.html">Karate</a>
+                        <a href="orchestra.html">Orchestra</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -57,7 +95,33 @@
     <!-- Page Content -->
     <div class="page-content">
         <h2>Volunteering</h2>
-        <p>This is the Volunteering page.</p>
+        <div class="vol-box">
+            <div class="vol-title">Schoolhouse.world - 2026-Present</div>
+            <img src="assets/SHS1.png" alt="SHS1" class="vol-image">
+            <div class="vol-desc">I tutor high school students in SAT Math/English concepts and problem-solving strategies.
+    I also help students build accuracy, confidence, and test-taking skills. 
+    </div>
+        </div>
+
+        <div class="vol-box">
+            <div class="vol-title">Lexington Community Farm - 2022 & 2023</div>
+            <img src="assets/CommuinityFarm.jpeg" alt="Community Farm" class="vol-image">
+            <div class="vol-desc"> During summer vacations, I worked on removing weeds, cleaning greenhouses, and tarp management. 
+                I also helped our community to maintain an environment for crops to thrive in. </div>
+        </div>
+
+        <div class="vol-box">
+            <div class="vol-title">Science Olympiad Mentoring - 2024 & 2025</div>
+            <div class="vol-desc">I guided middle school students in the Experimental Design event. I also taught scientific reasoning and competition strategies to ensure they did their best during competitions.</div>
+        </div>
+
+        <div class="vol-box">
+            <div class="vol-title">Infinity Squad - 2024 & 2025</div>
+            <div class="vol-desc">I provided one-on-one support in foundational math topics and
+                 improved student’s conceptual understanding and performance in foundtational math topics. 
+</div>
+        </div>
+
         <a href="index.html" class="back-btn">← Back to Home</a>
     </div>
 
@@ -68,4 +132,5 @@
         <p>&copy; 2026 My Website</p>
     </footer>
 </body>
+<script src="nav-fix.js"></script>
 </html>
